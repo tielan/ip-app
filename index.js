@@ -4,7 +4,7 @@ const port = 3000;
 let ioMapper = {};
 
 app.get("/app", (req, res) => {
-  res.location("http://" + ioMapper.ip + ":9902");
+  res.redirect("http://" + ioMapper.ip + ":9902");
 });
 
 app.get("/gip", (req, res) => {
