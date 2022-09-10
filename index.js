@@ -4,7 +4,7 @@ const port = 3000;
 let ioMapper = {};
 
 app.get("/gip", (req, res) => {
-  res.send(ioMapper.host || "");
+  res.send(ioMapper.ip || "");
 });
 
 app.get("/ip", (req, res) => {
