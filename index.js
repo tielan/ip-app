@@ -11,6 +11,7 @@ app.get("/ip", (req, res) => {
   let ip = getClientIp(req).match(/\d+.\d+.\d+.\d+/);
   ip = ip ? ip.join(".") : null;
   ioMapper = {ip}
+  console.log(ip)
   res.send("ok");
 });
 
